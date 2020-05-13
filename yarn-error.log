@@ -1,0 +1,40 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn add express
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/Users/wuwenjie2001/Documents/arcanist/bin:/Users/wuwenjie2001/Documents/arcanist/bin
+
+Yarn version: 
+  1.21.0
+
+Node version: 
+  12.14.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile '/Users/wuwenjie2001/Library/Caches/Yarn/v6/npm-ansi-regex-4.1.0-8b9f8f08cf1acb843756a839ca8c7e3168c51997-integrity/node_modules/ansi-regex/index.js' -> '/Users/wuwenjie2001/Documents/personal/nodejs/blog-server/node_modules/ansi-align/node_modules/ansi-regex/index.js'
+
+npm manifest: 
+  {
+    "name": "blog-server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "nodemon": "^2.0.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
