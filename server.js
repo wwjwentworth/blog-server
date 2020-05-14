@@ -2,7 +2,7 @@
  * @Author: 吴文洁
  * @Date: 2020-05-12 15:19:22
  * @LastEditors: 吴文洁
- * @LastEditTime: 2020-05-13 19:26:01
+ * @LastEditTime: 2020-05-14 10:30:04
  * @Dscription: 
  * @Copyrigh: © 2020 杭州杰竞科技有限公司 版权所有
  */
@@ -33,5 +33,7 @@ app.use((req, res, next) => {
 
 // 文章路由
 app.use('/article', articleRoute);
+
+app.use('/public', express.static('public'));
 
 app.listen(5000);
