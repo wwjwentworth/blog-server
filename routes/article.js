@@ -2,7 +2,7 @@
  * @Author: 吴文洁
  * @Date: 2020-05-12 15:24:02
  * @LastEditors: 吴文洁
- * @LastEditTime: 2020-05-14 16:15:27
+ * @LastEditTime: 2020-05-15 14:28:59
  * @Description: 
  */
 
@@ -16,11 +16,12 @@ const Article = require('../models/article');
 
 
 route.post('/', async (req, res) => {
-  const { title, description, markdown } = req.body;
+  const { title, description, markdown, cover } = req.body;
   let article = new Article();
   article.title = title;
   article.description = description;
   article.markdown = markdown;
+  article.cover = cover
 
   try {
     article = await article.save();
@@ -60,7 +61,6 @@ route.get('/', async (req, res) => {
 route.post('/upload', async (req, res) => {
   const form = new multiparty.Form();
   form.parse(req, (err, fields, files) => {
-    console.log(fields, files)
     try {
       const { file } = files;
       const { path, originalFilename } = file[0];
